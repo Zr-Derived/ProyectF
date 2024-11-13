@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #3a83ad;
+  color: #fff;
+}
+
+.encabezado .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.encabezado h1 {
+  flex-grow: 1;
+}
+
+#boton-regresar {
+  color: #fff;
+  text-decoration: none;
+  background-color: #555;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+#boton-regresar:hover {
+  background-color: #777;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.principal section {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.principal section h2 {
+  margin-bottom: 10px;
+}
+
+.principal section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.principal section input,
+.principal section select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.principal .productos {
+  flex: 1.5;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/* Alineación de los botones en el pie */
+aside .contenedor-botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+#completar-compra,
+button[type="button"] {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#completar-compra:hover,
+button[type="button"]:hover {
+  background-color: #218838;
+}
+
+.pie-pagina {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer-links,
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+}

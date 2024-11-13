@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #0c6193;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navegador {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.filtro {
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4cae4c;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-comprar {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-comprar:hover {
+  background-color: #c9302c;
+}
+
+.btn-cancelar {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-cancelar:hover {
+  background-color: #ec971f;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.productos-lista {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.producto p {
+  font-size: 14px;
+  color: #555;
+}
+
+.detalle-producto {
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.detalle-producto h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.detalle-producto p {
+  font-size: 14px;
+  color: #333;
+}
+
+#cantidades {
+  width: 50px;
+  padding: 5px;
+  margin: 10px 0;
+}

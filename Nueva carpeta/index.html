@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="Contenedor">
+        <div class="Menu">
+          <div class="Titulo">
+            <h1>Saiyan Game Store</h1>
+            <img
+              src="https://i.pinimg.com/474x/67/26/b5/6726b576a935420fb717a6ee6440f024.jpg"
+            />
+          </div>
+          <nav>
+            <div class="Enlaces">
+              <a href="#inicio" class="boton">Inicio</a>
+              <a href="#juegos" class="boton">Juegos</a>
+              <a href="#ofertas" class="boton">Ofertas</a>
+              <a href="#contacto" class="boton">Contactos</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <h2 class="texto0">Bienvenido a nuestra tienda de juegos</h2>
+          <p>
+            Explora nuestra selección de juegos y disfruta de ofertas
+            exclusivas.
+          </p>
+          <div id="Productos" class="Lista">
+            <h2>Registro de Productos</h2>
+            <div class="form-field">
+              <label for="nombre">Nombre de la Persona</label>
+              <input type="text" id="nombre" name="nombre" />
+            </div>
+            <div class="form-field">
+              <label for="precio">Presupuesto</label>
+              <input type="number" id="precio" name="precio" />
+            </div>
+            <div class="form-field">
+              <label for="direccion">Direccion</label>
+              <input type="text" id="direccion" name="direccion" />
+            </div>
+            <div class="form-field">
+              <label for="telefono">Telefono</label>
+              <input type="number" id="telefono" name="telefono" />
+            </div>
+              <div class="opciones">
+                <label class="boton-redondo">
+                  <input type="radio" name="entrega" value="entrega-directa" />
+                  <span>Entrega a Domicilio</span>
+                </label>
+                <label class="boton-redondo">
+                  <input type="radio" name="entrega" value="recoger-punto" />
+                  <span>Recoger en el Punto</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" id="botonEnviar">Enviar</button>
+          </div>
+        </div>
+      </section>
+      <nav class="GG">
+        <div class="botones-container">
+          <div class="caja-botones">
+            <button onclick="limpiarFormulario()">Limpiar Formulario</button>
+            <button onclick="mostrarListadoProductos()">
+              Listado de Productos
+            </button>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Saiyan Game Store. Todos los derechos reservados.</p>
+        <p>
+          Somos una tienda dedicada a ofrecer la mejor selección de videojuegos,
+          consolas y accesorios para gamers de todas las edades. Nuestro
+          objetivo es brindar un servicio de calidad y productos a precios
+          competitivos.
+        </p>
+        <div class="footer-links">
+          <a href="#Ayuda-y-soporte">Ayuda y soporte</a> |
+          <a href="#faq">Preguntas Frecuentes</a> |
+          <a href="#privacy-policy">Política de Privacidad</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+          <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </footer>
+    <script src="formulario.js"></script>
+  </body>
+</html>

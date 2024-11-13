@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saiyan Game Store</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/474x/67/26/b5/6726b576a935420fb717a6ee6440f024.jpg"
+          alt="imagen logo"
+        />
+        <h1>Catálogo de Productos - Saiyan Game Store</h1>
+      </div>
+      <p>
+        Explora nuestra selección de juegos y disfruta de ofertas exclusivas.
+      </p>
+    </header>
+
+    <nav class="navegador">
+      <div class="filtros">
+        <!-- Filtro por categoría -->
+        <select id="categoria" class="filtro">
+          <option value="">Filtrar por Categoría</option>
+          <option value="Consola">Consola</option>
+          <option value="Controlador">Controlador</option>
+          <option value="Auriculares">Auriculares</option>
+          <option value="Accesorio">Accesorio</option>
+          <option value="Almacenamiento">Almacenamiento</option>
+          <option value="Teclado">Teclado</option>
+          <option value="Ratón">Ratón</option>
+          <option value="Monitor">Monitor</option>
+          <option value="GPU">GPU</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Micrófono">Micrófono</option>
+          <option value="Capturadora">Capturadora</option>
+          <option value="Juego">Juego</option>
+          <option value="Televisor">Televisor</option>
+        </select>
+
+        <!-- Filtro por marca -->
+        <select id="MarcaProductos" class="filtro">
+          <option value="">Filtrar por Marca</option>
+          <option value="sony">Sony</option>
+          <option value="microsoft">Microsoft</option>
+          <option value="nintendo">Nintendo</option>
+          <option value="razer">Razer</option>
+          <option value="logitech">Logitech</option>
+          <option value="corsair">Corsair</option>
+          <option value="hyperX">HyperX</option>
+          <option value="Oculus">Oculus</option>
+          <option value="Seagate">Seagate</option>
+          <option value="Turtle Beach">Turtle Beach</option>
+          <option value="ASUS">ASUS</option>
+          <option value="Acer">Acer</option>
+          <option value="Dell">Dell</option>
+          <option value="Samsung">Samsung</option>
+          <option value="AMD">AMD</option>
+          <option value="NVIDIA">NVIDIA</option>
+          <option value="Alienware">Alienware</option>
+          <option value="MSI">MSI</option>
+          <option value="Blue">Blue</option>
+          <option value="Elgato">Elgato</option>
+          <option value="Valve">Valve</option>
+        </select>
+
+        <button id="filtrar-btn" class="btn">Filtrar</button>
+        <button id="limpiar-filtros" class="btn">Limpiar Filtros</button>
+      </div>
+
+      <div class="acciones">
+        <a href="carrito.html" class="btn-comprar">Completar Compra</a>
+        <a href="index.html" class="btn-cancelar">Cancelar Compra</a>
+      </div>
+    </nav>
+
+    <main class="principal">
+      <section class="productos-lista" id="Productos"></section>
+
+      <aside class="detalle-producto">
+        <h3>Detalles del Producto</h3>
+        <img id="imagen" alt="Imagen del producto" />
+        <p id="entidad"></p>
+        <p id="empresa"></p>
+        <p id="cantidad"></p>
+        <p id="id"></p>
+        <p id="Precio"></p>
+        <p id="categoria"></p>
+
+        <label for="cantidad">Cantidad a comprar:</label>
+        <input type="number" id="cantidades" min="1" required />
+        <button id="agregar-carrito" class="btn">Agregar al carrito</button>
+      </aside>
+    </main>
+
+    <script src="java.js"></script>
+    <script src="listadofuncion.js"></script>
+  </body>
+</html>

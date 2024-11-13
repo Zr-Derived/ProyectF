@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras - Saiyan Game Store</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <img
+        class="logo"
+        src="https://i.pinimg.com/474x/67/26/b5/6726b576a935420fb717a6ee6440f024.jpg"
+        alt="Logo de Saiyan Game Store"
+      />
+      <h1>Saiyan Game Store</h1>
+      <a id="boton-regresar" href="Productos.html"
+        >Regresar al listado de productos</a
+      >
+    </header>
+    <main class="principal">
+      <section>
+        <article>
+          <table>
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  <label>
+                    <input type="checkbox" id="checkbox-domicilio" />
+                    Recargo por domicilio: $150
+                  </label>
+                </td>
+                <td>Total</td>
+                <td id="total-precio">$0</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+        <article>
+          <h2>Detalles del Pago</h2>
+          <label for="tarjeta">Número de tarjeta</label>
+          <input
+            type="number"
+            id="tarjeta"
+            name="tarjeta"
+            maxlength="19"
+            placeholder="1234-5678-9101-1123"
+            required
+            title="Debe tener entre 16 y 20 dígitos"
+            required
+          />
+          <label for="fecha-exp">Fecha de Expiración</label>
+          <input
+            type="text"
+            id="fecha-exp"
+            name="fechaExp"
+            pattern="\d{2}/\d{2}"
+            placeholder="MM/AA"
+            title="Formato MM/AA"
+            required
+          />
+          <label for="codigo-seguridad">Código de Seguridad</label>
+          <input
+            type="password"
+            id="codigo-seguridad"
+            name="codigo-seguridad"
+            pattern="\d{3}"
+            maxlength="3"
+            title="Debe tener 3 dígitos"
+            required
+          />
+          <label for="tipo-tarjeta">Tipo de Tarjeta</label>
+          <select id="tipo-tarjeta">
+            <option>MasterCard</option>
+            <option>Visa</option>
+            <option>Prepagada</option>
+          </select>
+          <label for="pais-emision">País de Emisión</label>
+          <select id="pais-emision">
+            <option>Colombia</option>
+            <option>Estados Unidos</option>
+            <option>Canadá</option>
+            <option>España</option>
+            <option>Francia</option>
+            <option>Chile</option>
+            <option>Argentina</option>
+            <option>Inglaterra</option>
+            <option>Portugal</option>
+            <option>Brasil</option>
+          </select>
+          <label for="nombre-titular">Nombre del Titular</label>
+          <input
+            type="text"
+            id="nombre-titular"
+            name="nombre-titular"
+            placeholder="Nombre del titular de la tarjeta"
+            required
+          />
+        </article>
+      </section>
+      <aside>
+        <div class="contenedor-botones">
+          <button id="completar-compra">Confirmar Compra</button>
+          <button type="button" onclick="limpiarCampos()">
+            Limpiar Campos
+          </button>
+        </div>
+      </aside>
+    </main>
+    <footer class="pie-pagina">
+      <p>&copy; 2024 Saiyan Game Store. Todos los derechos reservados.</p>
+      <p>
+        Somos una tienda dedicada a ofrecer la mejor selección de videojuegos,
+        consolas y accesorios para gamers de todas las edades.
+      </p>
+      <div class="footer-links">
+        <a href="#Ayuda-y-soporte">Ayuda y soporte</a> |
+        <a href="#faq">Preguntas Frecuentes</a> |
+        <a href="#privacy-policy">Política de Privacidad</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </div>
+    </footer>
+    <script src="carrito.js"></script>
+  </body>
+</html>
